@@ -1,0 +1,41 @@
+.sticky-note {
+    position: fixed;
+    width: 320px;
+    background-color: rgb(250, 234, 219);
+    filter: drop-shadow(2px 5px 5px rgba(185, 79, 79, 0.158));
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sticky-note-handle {
+    height: 20px;
+    background-color: rgb(231, 196, 175);
+    cursor: grab;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sticky-note-handle:active {
+    cursor: grabbing;
+}
+
+
+.sticky-note-text, .sticky-note-title {
+    all: unset;
+    word-break: break-word;
+    width: 280px;
+    line-height: 23px;
+}
+
+.sticky-note-title {
+    margin: 0px 20px;
+}
+
+.sticky-note-text {
+    padding: 0px 20px;
+    /* overflow-y: hidden; */
+    resize: vertical;
+}
+
+/* DEFAULT HEIGHTS */
+.sticky-note-xs {height: 100px;}
+.sticky-note-s {height: 200px;}
+.sticky-note-l {height: 480px;}

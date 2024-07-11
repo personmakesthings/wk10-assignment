@@ -1,0 +1,113 @@
+/* VARIABLES */
+:root {
+    --handle-colour: #c5d5ff;
+    --handle-colour-dark: #a5bdf8;
+    --handle-colour-hover: #8fabf1;
+    --bg-colour: #fffefd;
+}
+
+
+
+/* NO DRAG */
+* {
+    /* user-drag: none; */
+    -webkit-user-drag: none;
+    /* user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; */
+}
+
+
+/* OPEN BUTTON STYLES */
+.unset-btn {
+    all: unset;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* USER-DEFINED BUTTONS */
+/* EXAMPLE */
+/* .btn-001 {
+    position: fixed;
+    top: 0px
+} */
+
+
+
+/* WHOLE COMPONENT */
+.window-box{
+    background-color: var(--bg-colour);
+    width: 400px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 100;
+    filter: drop-shadow(2px 5px 5px rgba(185, 79, 79, 0.158));
+}
+
+
+
+
+/* TITLE ELEMENTS */
+.window-handle {
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--handle-colour);
+    cursor: grab;
+}
+
+.window-handle:active {
+    cursor: grabbing;
+}
+
+.window-title-text {
+    font-size: 20px;
+    padding: 5px 20px;
+    word-break: break-word;
+}
+
+
+/* CONTENT ELEMENTS */
+.window-content {
+    padding: 20px 20px 30px 20px;
+    word-break: break-word;
+    overflow-y: auto;
+}
+
+
+
+
+/* WINDOW BUTTONS */
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 25px 20px 20px 0px;
+}
+
+.btn {
+    all: unset;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.x-btn {
+    background-color: rgb(238, 133, 133);
+}
+
+.x-btn:hover {
+    background-color: rgb(202, 80, 80);
+}
+
+.min-btn {
+    background-color: rgb(188, 241, 163);
+}
+
+.min-btn:hover {
+    background-color: rgb(168, 231, 139);
+}

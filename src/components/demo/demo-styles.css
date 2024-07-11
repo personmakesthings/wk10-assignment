@@ -1,0 +1,45 @@
+/* NO DRAG */
+.small-box {
+    /* user-drag: none; */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.small-box {
+    margin: 20px;
+    width: 350px;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+}
+
+.drag-me {
+    cursor: grab;
+}
+
+.drag-me:active {
+    cursor: grabbing;
+}
+
+
+.move-me {
+    cursor: move;
+}
+
+.bidirectional {
+    display: flex;
+    gap: 0px 30px;
+}
+
+.left-right, .up-down {
+    height: 60px;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+
+}
+
+.left-right {cursor: ew-resize;}
+.up-down {cursor: ns-resize;}
