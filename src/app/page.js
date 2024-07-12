@@ -58,7 +58,7 @@ export default function Home() {
 
       <p>The package provides us with a <code>{`<Draggable>`}</code> element which we can wrap around other elements. This gives the wrapped elements with event handlers to change their position using CSS transforms.</p>
 
-      <p>This is the sole utility the package provides. How it is implemented is left entirely to the developer. It can be used to create anything, from a simple, single movable element, to sprawling boards of sticky notes.</p>
+      <p>This is the sole utility the package provides. How it is implemented is left entirely to the developer. It can be used to create anything, from a simple, single movable element, to sprawling sticky note boards.</p>
       
       <p>The drag movement function in this web app has also been achieved using <code>react-draggable</code>. It has primarily been used to make movable windows to present this demo.</p>
 
